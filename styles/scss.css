@@ -1,0 +1,1124 @@
+@charset "UTF-8";
+[class*=_container] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+
+.open {
+  display: flex !important;
+}
+
+.open {
+  display: flex !important;
+}
+
+header {
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+}
+header.scrolled {
+  background-color: rgb(255, 255, 255);
+}
+header .header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .header_container .header-logo {
+  color: #a631dc;
+  width: 60px;
+  height: 60px;
+  transition: transform 0.2s ease-in-out;
+}
+header .header_container .header-logo:hover {
+  transform: scale(0.95);
+}
+header .header_container nav {
+  display: flex;
+  align-items: center;
+}
+header .header_container nav ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  margin: 0;
+}
+header .header_container nav ul li {
+  align-self: center;
+}
+header .header_container nav ul li a {
+  color: #04091E;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+header .header_container nav ul li a:hover {
+  transform: scale(1.2);
+  color: rgb(121, 121, 121);
+}
+header .header_container nav ul li a:hover::after {
+  width: 100%;
+}
+header .header_container nav ul li button {
+  color: white; /* белый цвет текста */
+  background-color: black; /* черный фон */
+  text-decoration: none; /* убираем стандартное подчеркивание ссылок */
+  padding: 15px 25px; /* для увеличения пространства вокруг текста */
+  display: inline-block; /* чтобы тень была применена к блочному элементу */
+  position: relative; /* необходимо для позиционирования тени относительно элемента */
+}
+header .header_container nav ul li button:before {
+  content: ""; /* создаем псевдоэлемент для тени */
+  position: absolute; /* позиционируем псевдоэлемент абсолютно */
+  top: 10px; /* смещение тени вниз на 10px */
+  left: 10px; /* смещение тени вправо на 10px */
+  width: 100%; /* ширина тени равна ширине элемента */
+  height: 100%; /* высота тени равна высоте элемента */
+  background: linear-gradient(97deg, #4D34E3 8%, #E93470 91%); /* градиент для тени */
+  z-index: -1; /* чтобы тень находилась за элементом */
+  pointer-events: none; /* чтобы тень не мешала взаимодействию с элементом */
+}
+header .header_container nav.open {
+  overflow-y: unset;
+  text-align: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.335) 0;
+}
+header .header_container .burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+header .header_container .burger span {
+  height: 2px;
+  width: 100%;
+  transform: scale(1);
+  background-color: #000000;
+}
+header .header_container .burger::before, header .header_container .burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+  transition: all 0.3s ease 0s;
+}
+header .header_container .burger::before {
+  top: 0;
+}
+header .header_container .burger::after {
+  bottom: 0;
+}
+header .header_container .burger.active span {
+  transform: scale(0);
+}
+header .header_container .burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+header .header_container .burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+@media (max-width: 1200px) {
+  header .header_container .burger {
+    display: flex;
+  }
+  header .header_container nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    overflow-y: auto;
+    padding: 50px 40px;
+    background-color: rgba(255, 255, 255, 0.9254901961);
+    animation: burgerAnimation 0.4s;
+  }
+  header .header_container nav ul {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+main .hero-section {
+  margin: 172px 0;
+}
+main .hero-section .hero_container {
+  display: flex;
+}
+main .hero-section .hero_container .left-part {
+  position: relative;
+  margin-top: 70px;
+}
+main .hero-section .hero_container .left-part .miami-head {
+  font-family: Plus Jakarta Sans;
+  font-size: 170px;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(269deg, #F43366 0.72%, #3C33EF 103.58%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 163px;
+}
+main .hero-section .hero_container .left-part .miami-head-design {
+  display: none;
+  font-family: Plus Jakarta Sans;
+  font-size: 63px;
+  font-style: normal;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+}
+main .hero-section .hero_container .left-part .walker-head {
+  position: absolute;
+  font-family: Plus Jakarta Sans;
+  font-size: 170px;
+  font-style: normal;
+  font-weight: 800;
+  color: black;
+  text-transform: uppercase;
+  top: 141px;
+  left: -8px;
+}
+main .hero-section .hero_container .left-part .walker-head span {
+  color: white;
+}
+main .hero-section .hero_container .left-part p {
+  color: #666;
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px; /* 165% */
+  margin-bottom: 80px;
+}
+main .hero-section .hero_container .left-part .hero-link {
+  color: white; /* белый цвет текста */
+  background-color: black; /* черный фон */
+  text-decoration: none; /* убираем стандартное подчеркивание ссылок */
+  padding: 10px 20px; /* для увеличения пространства вокруг текста */
+  display: inline-block; /* чтобы тень была применена к блочному элементу */
+  position: relative; /* необходимо для позиционирования тени относительно элемента */
+}
+main .hero-section .hero_container .left-part .hero-link:before {
+  content: ""; /* создаем псевдоэлемент для тени */
+  position: absolute; /* позиционируем псевдоэлемент абсолютно */
+  top: 10px; /* смещение тени вниз на 10px */
+  left: 10px; /* смещение тени вправо на 10px */
+  width: 100%; /* ширина тени равна ширине элемента */
+  height: 100%; /* высота тени равна высоте элемента */
+  background: linear-gradient(97deg, #4D34E3 8%, #E93470 91%); /* градиент для тени */
+  z-index: -1; /* чтобы тень находилась за элементом */
+  pointer-events: none; /* чтобы тень не мешала взаимодействию с элементом */
+}
+main .hero-section .hero_container .right-part {
+  width: 560px;
+  height: 699px;
+}
+main .logos-section {
+  margin-bottom: 140px;
+}
+main .logos-section .logos_container h2 {
+  color: rgba(18, 20, 29, 0.8);
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 133.333% */
+  letter-spacing: 1px;
+}
+main .logos-section .logos_container ul {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+main .logos-section .logos_container ul li img {
+  width: 170px;
+  height: 100px;
+}
+main .features-section {
+  margin-bottom: 150px;
+}
+main .features-section .features_container {
+  display: flex;
+  justify-content: space-between;
+}
+main .features-section .features_container .features-about {
+  width: 40%;
+}
+main .features-section .features_container .features-about h3 {
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: 2.1px;
+  background: linear-gradient(91deg, #5635DD -2.48%, #E63573 99.68%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .features-section .features_container .features-about h2 {
+  color: #131313;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%; /* 54px */
+  margin-bottom: 32px;
+}
+main .features-section .features_container .features-about p {
+  color: #AAA;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+  margin-bottom: 63px;
+}
+main .features-section .features_container .features-about .features-link {
+  color: white; /* белый цвет текста */
+  background-color: black; /* черный фон */
+  text-decoration: none; /* убираем стандартное подчеркивание ссылок */
+  padding: 10px 20px; /* для увеличения пространства вокруг текста */
+  display: inline-block; /* чтобы тень была применена к блочному элементу */
+  position: relative; /* необходимо для позиционирования тени относительно элемента */
+}
+main .features-section .features_container .features-about .features-link::before {
+  content: ""; /* создаем псевдоэлемент для тени */
+  position: absolute; /* позиционируем псевдоэлемент абсолютно */
+  top: 10px; /* смещение тени вниз на 10px */
+  left: 10px; /* смещение тени вправо на 10px */
+  width: 100%; /* ширина тени равна ширине элемента */
+  height: 100%; /* высота тени равна высоте элемента */
+  background: linear-gradient(97deg, #4D34E3 8%, #E93470 91%); /* градиент для тени */
+  z-index: -1; /* чтобы тень находилась за элементом */
+  pointer-events: none; /* чтобы тень не мешала взаимодействию с элементом */
+}
+main .features-section .features_container .features-blocks {
+  display: flex;
+  gap: 30px;
+}
+main .features-section .features_container .features-blocks ul li {
+  margin-bottom: 20px;
+}
+main .features-section .features_container .features-blocks ul li img {
+  margin-bottom: 7px;
+}
+main .features-section .features_container .features-blocks ul li h4 {
+  color: #131313;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 33.6px */
+  margin-bottom: 11px;
+}
+main .features-section .features_container .features-blocks ul li p {
+  color: #AAA;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+}
+main .features-section .features_container .features-blocks .features-block1 {
+  margin-top: 60px;
+}
+main .achievements-section {
+  margin-bottom: 200px;
+}
+main .achievements-section .achievements_container ul {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+main .achievements-section .achievements_container ul li h2 {
+  font-family: Poppins;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 98px */
+}
+main .achievements-section .achievements_container ul li p {
+  color: #000;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 22.4px */
+}
+main .portfolio-section {
+  margin-bottom: 175px;
+}
+main .portfolio-section .portfolio_container .portfolio-headline {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+main .portfolio-section .portfolio_container .portfolio-headline ul li {
+  margin-bottom: 0;
+}
+main .portfolio-section .portfolio_container .portfolio-headline ul li h3 {
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+  background: linear-gradient(91deg, #5635DD -2.48%, #E63573 99.68%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .portfolio-section .portfolio_container .portfolio-headline ul li h2 {
+  color: #131313;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%; /* 54px */
+}
+main .portfolio-section .portfolio_container .portfolio-headline .portfolio-link {
+  margin-top: 40px;
+  color: white; /* белый цвет текста */
+  background-color: black; /* черный фон */
+  text-decoration: none; /* убираем стандартное подчеркивание ссылок */
+  padding: 10px 25px; /* для увеличения пространства вокруг текста */
+  display: inline-block; /* чтобы тень была применена к блочному элементу */
+  position: relative; /* необходимо для позиционирования тени относительно элемента */
+}
+main .portfolio-section .portfolio_container .portfolio-headline .portfolio-link:before {
+  content: ""; /* создаем псевдоэлемент для тени */
+  position: absolute; /* позиционируем псевдоэлемент абсолютно */
+  top: 10px; /* смещение тени вниз на 10px */
+  left: 10px; /* смещение тени вправо на 10px */
+  width: 100%; /* ширина тени равна ширине элемента */
+  height: 100%; /* высота тени равна высоте элемента */
+  background: linear-gradient(97deg, #4D34E3 8%, #E93470 91%); /* градиент для тени */
+  z-index: -1; /* чтобы тень находилась за элементом */
+  pointer-events: none; /* чтобы тень не мешала взаимодействию с элементом */
+}
+main .portfolio-section .portfolio_container .portfolio-photos {
+  width: 100%;
+}
+main .portfolio-section .portfolio_container .portfolio-photos ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  position: relative;
+}
+main .portfolio-section .portfolio_container .portfolio-photos ul .photos-headline {
+  position: absolute;
+  top: 200px;
+  left: 58px;
+}
+main .portfolio-section .portfolio_container .portfolio-photos ul .photos-headline h2 {
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+  background: linear-gradient(91deg, #5635DD -2.48%, #E63573 99.68%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .portfolio-section .portfolio_container .portfolio-photos ul .photos-headline p {
+  color: #FFD9D9;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%; /* 54px */
+}
+main .blog-section {
+  background: #181818;
+  z-index: -2;
+}
+main .blog-section .blog_container {
+  z-index: 1;
+  padding-top: 92px;
+  padding-bottom: 138px;
+}
+main .blog-section .blog_container .blog-headline {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+main .blog-section .blog_container .blog-headline ul li {
+  margin-bottom: 0;
+}
+main .blog-section .blog_container .blog-headline ul li h3 {
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+  background: linear-gradient(91deg, #5635DD -2.48%, #E63573 99.68%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .blog-section .blog_container .blog-headline ul li h2 {
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%; /* 54px */
+}
+main .blog-section .blog_container .blog-headline .blog-link {
+  top: 10px;
+  left: -35px;
+  background: linear-gradient(97deg, #4D34E3 8%, #E93470 91%); /* градиент для тени */
+  text-decoration: none; /* убираем стандартное подчеркивание ссылок */
+  padding: 20px 30px; /* для увеличения пространства вокруг текста */
+  display: inline-block; /* чтобы тень была применена к блочному элементу */
+  position: relative; /* необходимо для позиционирования тени относительно элемента */
+  height: 58px;
+}
+main .blog-section .blog_container .blog-headline .blog-link::before {
+  content: "Learn More"; /* создаем псевдоэлемент для тени */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; /* позиционируем псевдоэлемент абсолютно */
+  color: black;
+  top: -10px;
+  left: -28px;
+  width: 100%; /* ширина тени равна ширине элемента */
+  height: 100%; /* высота тени равна высоте элемента */
+  background: #ffffff;
+  z-index: 0; /* чтобы тень находилась за элементом */
+  pointer-events: none; /* чтобы тень не мешала взаимодействию с элементом */
+}
+main .blog-section .blog_container .blog {
+  padding-bottom: 100px;
+}
+main .blog-section .blog_container .blog .blog-body, main .blog-section .blog_container .blog .blog-body2, main .blog-section .blog_container .blog .blog-body3 {
+  display: flex;
+}
+main .blog-section .blog_container .blog .blog-body .blog-block, main .blog-section .blog_container .blog .blog-body .blog-block2, main .blog-section .blog_container .blog .blog-body2 .blog-block, main .blog-section .blog_container .blog .blog-body2 .blog-block2, main .blog-section .blog_container .blog .blog-body3 .blog-block, main .blog-section .blog_container .blog .blog-body3 .blog-block2 {
+  margin-bottom: 150px;
+  background-image: url(/images/blog-bg.jpg);
+  height: 50vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
+main .blog-section .blog_container .blog .blog-body .blog-block .blog-block-about, main .blog-section .blog_container .blog .blog-body .blog-block2 .blog-block-about, main .blog-section .blog_container .blog .blog-body2 .blog-block .blog-block-about, main .blog-section .blog_container .blog .blog-body2 .blog-block2 .blog-block-about, main .blog-section .blog_container .blog .blog-body3 .blog-block .blog-block-about, main .blog-section .blog_container .blog .blog-body3 .blog-block2 .blog-block-about {
+  padding: 20px;
+  width: 400px;
+  background: #181818;
+  position: absolute;
+  top: 251px;
+  left: 141px;
+}
+main .blog-section .blog_container .blog .blog-body .blog-block .blog-block-about h6, main .blog-section .blog_container .blog .blog-body .blog-block2 .blog-block-about h6, main .blog-section .blog_container .blog .blog-body2 .blog-block .blog-block-about h6, main .blog-section .blog_container .blog .blog-body2 .blog-block2 .blog-block-about h6, main .blog-section .blog_container .blog .blog-body3 .blog-block .blog-block-about h6, main .blog-section .blog_container .blog .blog-body3 .blog-block2 .blog-block-about h6 {
+  color: #888;
+  font-family: Plus Jakarta Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 18.2px */
+}
+main .blog-section .blog_container .blog .blog-body .blog-block .blog-block-about h2, main .blog-section .blog_container .blog .blog-body .blog-block2 .blog-block-about h2, main .blog-section .blog_container .blog .blog-body2 .blog-block .blog-block-about h2, main .blog-section .blog_container .blog .blog-body2 .blog-block2 .blog-block-about h2, main .blog-section .blog_container .blog .blog-body3 .blog-block .blog-block-about h2, main .blog-section .blog_container .blog .blog-body3 .blog-block2 .blog-block-about h2 {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%; /* 40.5px */
+  margin-bottom: 22px;
+}
+main .blog-section .blog_container .blog .blog-body .blog-block .blog-block-about p, main .blog-section .blog_container .blog .blog-body .blog-block2 .blog-block-about p, main .blog-section .blog_container .blog .blog-body2 .blog-block .blog-block-about p, main .blog-section .blog_container .blog .blog-body2 .blog-block2 .blog-block-about p, main .blog-section .blog_container .blog .blog-body3 .blog-block .blog-block-about p, main .blog-section .blog_container .blog .blog-body3 .blog-block2 .blog-block-about p {
+  color: #AAA;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+  margin-bottom: 22px;
+}
+main .blog-section .blog_container .blog .blog-body .blog-block .blog-block-about a, main .blog-section .blog_container .blog .blog-body .blog-block2 .blog-block-about a, main .blog-section .blog_container .blog .blog-body2 .blog-block .blog-block-about a, main .blog-section .blog_container .blog .blog-body2 .blog-block2 .blog-block-about a, main .blog-section .blog_container .blog .blog-body3 .blog-block .blog-block-about a, main .blog-section .blog_container .blog .blog-body3 .blog-block2 .blog-block-about a {
+  color: #FFF;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 2.88px;
+}
+main .blog-section .blog_container .blog .blog-body .blog-block2, main .blog-section .blog_container .blog .blog-body2 .blog-block2, main .blog-section .blog_container .blog .blog-body3 .blog-block2 {
+  background-image: url(/images/blog-bg2.png);
+}
+main .slider-section {
+  margin-top: 100px;
+}
+main .slider-section .slider_container .slider {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+main .slider-section .slider_container .navigation {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+main .slider-section .slider_container .bar {
+  width: 30px;
+  height: 8px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #000;
+  opacity: 0.5;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+main .slider-section .slider_container .bar:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+main .slider-section .slider_container input[name=r] {
+  visibility: hidden;
+}
+main .slider-section .slider_container .slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+main .slider-section .slider_container .slide {
+  width: 25%;
+  transition: all 0.6s ease;
+}
+main .slider-section .slider_container .img {
+  width: 100%;
+  height: 100%;
+}
+main .slider-section .slider_container #r1:checked ~ .s1 {
+  margin-left: 0;
+}
+main .slider-section .slider_container #r2:checked ~ .s1 {
+  margin-left: -25%;
+}
+main .slider-section .slider_container #r3:checked ~ .s1 {
+  margin-left: -50%;
+}
+main .slider-section .slider_container #r4:checked ~ .s1 {
+  margin-left: -75%;
+}
+main .acordion-section {
+  margin-top: 100px;
+  background-color: #181818;
+}
+main .acordion-section .acordion_container {
+  padding: 116px 0;
+  display: flex;
+  gap: 100px;
+}
+main .acordion-section .acordion_container .acordion-left {
+  width: 60%;
+}
+main .acordion-section .acordion_container .acordion-right {
+  width: 40%;
+}
+main .acordion-section .acordion_container .acordion-right h3 {
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+  background: linear-gradient(91deg, #5635DD -2.48%, #E63573 99.68%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+main .acordion-section .acordion_container .acordion-right h2 {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%; /* 54px */
+  margin-bottom: 25px;
+}
+main .acordion-section .acordion_container .acordion-right p {
+  color: #AAA;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144%; /* 23.04px */
+}
+
+footer .footer_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 142px;
+  padding-bottom: 50px;
+}
+footer .footer_container h3 {
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  background: linear-gradient(91deg, #5635DD -2.48%, #E63573 99.68%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+footer .footer_container h2 {
+  color: #131313;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%; /* 81px */
+  margin-bottom: 50px;
+}
+footer .footer_container .footer-link {
+  margin-bottom: 100px;
+}
+footer .footer_container .footer-link p {
+  margin: 0 auto;
+  width: 20%;
+  text-align: center;
+  color: #FFF;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 2.88px;
+  background: linear-gradient(180deg, #4B34E4 0%, #EE346B 100%);
+  padding: 80px 0;
+  border-radius: 50%;
+}
+footer .footer_container .footer-logo {
+  width: 72px;
+  height: 52px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+footer .footer_container .social-media {
+  display: flex;
+  gap: 145px;
+  margin: 0 auto;
+  margin-bottom: 105px;
+}
+footer .footer_container .policy {
+  display: flex;
+  margin: 0 auto;
+  gap: 400px;
+  color: #ACACAC;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+footer .footer_container .policy ul {
+  display: flex;
+}
+footer .footer_container .policy ul .space {
+  margin: 0 20px 0 20px;
+}
+footer .footer_container .policy ul a {
+  color: #ACACAC;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  pointer-events: initial;
+  visibility: visible;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 96%;
+  padding: 72px 5px 24px 5px;
+  background-color: #FCFCFC;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 428px) {
+  .modal {
+    max-width: 392px;
+    padding: 72px 16px 24px 16px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .modal {
+    max-width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
+}
+.backdrop.is-hidden .modal {
+  opacity: 0;
+  transform: translate(-50%, -70%);
+  transition-delay: 0ms;
+}
+
+.modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #404bbf;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon {
+  fill: #ffffff;
+}
+
+.modal-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icon:hover {
+  background-color: #404bbf;
+  border: none;
+}
+
+@media only screen and (min-width: 428px) {
+  .modal-form {
+    min-width: 360px;
+  }
+}
+.modal-caption {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--background-color-dark);
+}
+
+.modal-form-one {
+  margin-bottom: 8px;
+}
+
+.modal-form-label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--lightslate);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.modal-form-field {
+  position: relative;
+}
+
+.modal-form-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+  outline: transparent;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (max-width: 427px) {
+  .modal-form-input {
+    width: 96%;
+  }
+}
+.modal-form-input:focus {
+  border-color: var(--brand-color);
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--brand-color);
+}
+
+.modal-form-two {
+  margin-bottom: 16px;
+}
+
+.modal-form-comment {
+  width: 100%;
+  height: 120px;
+  padding: 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (max-width: 427px) {
+  .modal-form-comment {
+    width: 96%;
+  }
+}
+.modal-form-comment:focus {
+  border-color: var(--brand-color);
+}
+
+/*-------------------
+    HAMBURGER MENU
+-------------------*/
+.menu-toggle {
+  min-height: 24px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 1024px) {
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+}
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-top: 80px;
+  background-color: #ffffff;
+  z-index: 999;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu-container {
+    display: none;
+  }
+}
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  color: var(--title-text-color);
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu {
+  margin: 0;
+  margin-bottom: auto;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  color: var(--background-color-dark);
+  text-decoration: none;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+
+.mobile-link.active {
+  color: var(--link-color-change);
+}
+
+.mobile-menu .link:hover,
+.mobile-menu .link:focus {
+  color: var(--link-color-change);
+}
+
+.mobile-tel {
+  font-size: 8vw;
+  line-height: 1.11;
+  color: var(--link-color-change);
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  font-weight: 700;
+  padding-bottom: 40px;
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 428px) {
+  .mobile-tel {
+    font-size: 36px;
+  }
+}
+.mobile-email {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  padding-bottom: 48px;
+}
+
+.social-media-mobile {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 36px;
+}
+
+@media only screen and (min-width: 428px) {
+  .social-media-mobile {
+    gap: 56px;
+  }
+}
+.mobile-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-social-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--brand-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mibile-social-link:hover,
+.mobile-social-link:focus {
+  background-color: #31d0aa;
+}
+
+.mobile-social-media-icons {
+  fill: var(--background-color-cloud);
+}/*# sourceMappingURL=scss.css.map */

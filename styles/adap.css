@@ -1,0 +1,303 @@
+@media (max-width: 1171px) {
+  main .hero-section .hero_container .left-part .miami-head {
+    font-size: 140px;
+  }
+  main .hero-section .hero_container .left-part .walker-head {
+    font-size: 140px;
+  }
+  main .logos-section .logos_container ul {
+    justify-content: space-between;
+    gap: 0px;
+  }
+  main .logos-section .logos_container ul li img {
+    max-width: 150px;
+    max-height: 90px;
+  }
+  main .features-section .features_container {
+    justify-content: initial;
+    gap: 30px;
+  }
+  main .features-section .features_container .features-about h2 {
+    font-size: 30px;
+  }
+  main .features-section .features_container .features-about p {
+    font-size: 14px;
+  }
+  main .features-section .features_container .features-blocks ul li h4 {
+    font-size: 20px;
+  }
+  main .features-section .features_container .features-blocks ul li p {
+    font-size: 14px;
+  }
+  main .portfolio-section .portfolio_container .portfolio-photos ul li img {
+    max-width: 300px;
+    height: 224px;
+  }
+  main .portfolio-section .portfolio_container .portfolio-photos ul .photos-headline {
+    top: 150px;
+  }
+  main .portfolio-section .portfolio_container .portfolio-photos ul .photos-headline h2 {
+    font-size: 10px;
+  }
+  main .portfolio-section .portfolio_container .portfolio-photos ul .photos-headline p {
+    font-size: 25px;
+  }
+  main .portfolio-section .portfolio_container .portfolio-photos .photos-block2, main .portfolio-section .portfolio_container .portfolio-photos .photos-block3 {
+    display: none;
+  }
+  main .blog-section .blog_container .blog .blog-body2, main .blog-section .blog_container .blog .blog-body3 {
+    display: none;
+  }
+  main .blog-section .blog_container .blog .blog-body {
+    gap: 10px;
+    justify-content: space-around;
+  }
+  main .blog-section .blog_container .blog .blog-body .blog-block, main .blog-section .blog_container .blog .blog-body .blog-block2 {
+    width: 40%;
+  }
+  main .blog-section .blog_container .blog .blog-body .blog-block .blog-block-about, main .blog-section .blog_container .blog .blog-body .blog-block2 .blog-block-about {
+    left: 110px;
+    width: 300px;
+  }
+  main .blog-section .blog_container .blog .blog-body .blog-block .blog-block-about h2, main .blog-section .blog_container .blog .blog-body .blog-block2 .blog-block-about h2 {
+    font-size: 25px;
+  }
+  main .blog-section .blog_container .blog .blog-body .blog-block .blog-block-about p, main .blog-section .blog_container .blog .blog-body .blog-block2 .blog-block-about p {
+    font-size: 14px;
+  }
+  footer .footer_container .policy {
+    gap: 150px;
+  }
+}
+@media (max-width: 1000px) {
+  main .hero-section .hero_container .left-part .miami-head {
+    font-size: 120px;
+  }
+  main .hero-section .hero_container .left-part .walker-head {
+    font-size: 103px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section .hero_container .left-part .miami-head {
+    font-size: 8vw;
+    margin-bottom: 6vw;
+  }
+  .hero-section .hero_container .left-part .miami-head-design {
+    font-size: 3vw;
+  }
+  .hero-section .hero_container .left-part .walker-head {
+    font-size: 8vw;
+    top: 6vw;
+  }
+  .hero-section .hero_container .left-part p {
+    font-size: 1.2vw;
+    line-height: 1.8vw;
+    margin-bottom: 3vw;
+  }
+  .hero-section .hero_container .left-part .hero-link {
+    padding: 0.5vw 1vw;
+  }
+  .hero-section .hero_container .right-part {
+    width: 80%;
+  }
+  .features-section .features_container {
+    display: block;
+  }
+  .features-section .features_container .features-blocks .features-block1 {
+    display: block;
+  }
+  .features-section .features_container .features-blocks .features-block2 {
+    display: block;
+  }
+}
+@media (max-width: 450px) {
+  main .hero-section {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  main .hero-section .hero_container {
+    display: flex;
+    flex-direction: column;
+  }
+  main .hero-section .hero_container .left-part {
+    text-align: center;
+    order: 2;
+  }
+  main .hero-section .hero_container .left-part .miami-head {
+    display: none;
+    margin-bottom: 0;
+  }
+  main .hero-section .hero_container .left-part .miami-head-design {
+    display: block;
+    font-size: 60px;
+    position: absolute;
+    top: -192px;
+    left: 100px;
+  }
+  main .hero-section .hero_container .left-part .walker-head {
+    font-size: 60px;
+  }
+  main .hero-section .hero_container .left-part .walker-head {
+    top: -123px;
+    left: 66px;
+  }
+  main .hero-section .hero_container .left-part .walker-head span {
+    color: black;
+  }
+  main .hero-section .hero_container .right-part {
+    max-width: 380px;
+    text-align: center;
+    margin-bottom: 30px;
+    order: 1;
+    height: 500px;
+  }
+  main .hero-section .hero_container .right-part img {
+    max-width: 400px;
+    width: 380px;
+  }
+  main .logos-section {
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  main .logos-section .logos_container ul li img {
+    max-width: 84px;
+    max-height: 50px;
+  }
+  main .logos-section .logos_container ul .logos-none {
+    display: none;
+  }
+  main .features-section {
+    width: 100%;
+  }
+  main .features-section .features_container {
+    display: block;
+  }
+  main .features-section .features_container .features-about {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  main .features-section .features_container .features-blocks {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  main .features-section .features_container .features-blocks .features-block1, main .features-section .features_container .features-blocks .features-block2, main .features-section .features_container .features-blocks .features-block3 {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  main .achievements-section {
+    display: none;
+  }
+  main .portfolio-section {
+    width: 100%;
+  }
+  main .portfolio-section .portfolio_container .portfolio-headline {
+    display: block;
+    text-align: center;
+  }
+  main .portfolio-section .portfolio_container .portfolio-photos ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .portfolio-section .portfolio_container .portfolio-photos ul li {
+    margin: 0 auto;
+    margin-bottom: 26px;
+  }
+  main .portfolio-section .portfolio_container .portfolio-photos ul li img {
+    width: 356.762px;
+    height: 224.999px;
+  }
+  main .blog-section {
+    width: 100%;
+  }
+  main .blog-section .blog_container .blog-headline {
+    display: block;
+  }
+  main .blog-section .blog_container .blog-headline ul li h2 {
+    font-size: 30px;
+  }
+  main .blog-section .blog_container .blog-headline .blog-link {
+    top: 32px;
+    left: 29px;
+  }
+  main .blog-section .blog_container .blog {
+    width: 360px;
+  }
+  main .blog-section .blog_container .blog .blog-body {
+    display: block;
+    width: 100%;
+  }
+  main .blog-section .blog_container .blog .blog-body .blog-block, main .blog-section .blog_container .blog .blog-body .blog-block2 {
+    margin-bottom: 150px;
+    width: 95%;
+  }
+  main .blog-section .blog_container .blog .blog-body .blog-block .blog-block-about, main .blog-section .blog_container .blog .blog-body .blog-block2 .blog-block-about {
+    top: 150px;
+    left: 92px;
+    width: 250px;
+  }
+  main .blog-section .blog_container .blog .blog-body .blog-block .blog-block-about h6, main .blog-section .blog_container .blog .blog-body .blog-block2 .blog-block-about h6 {
+    font-size: 10px;
+  }
+  main .blog-section .blog_container .blog .blog-body .blog-block .blog-block-about h2, main .blog-section .blog_container .blog .blog-body .blog-block2 .blog-block-about h2 {
+    font-size: 20px;
+  }
+  main .blog-section .blog_container .blog .blog-body .blog-block .blog-block-about p, main .blog-section .blog_container .blog .blog-body .blog-block2 .blog-block-about p {
+    font-size: 13px;
+  }
+  main .slider-section {
+    display: none;
+  }
+  main .acordion-section .acordion_container {
+    display: flex;
+    flex-direction: column;
+  }
+  main .acordion-section .acordion_container .acordion-left {
+    width: 90%;
+    order: 2;
+    margin-left: 20px;
+  }
+  main .acordion-section .acordion_container .acordion-right {
+    order: 1;
+    margin-left: 20px;
+    width: 90%;
+  }
+  main .acordion-section .acordion_container .acordion-right h3 {
+    font-size: 12px;
+  }
+  main .acordion-section .acordion_container .acordion-right h2 {
+    font-size: 25px;
+  }
+  footer .footer_container h3 {
+    font-size: 13px;
+  }
+  footer .footer_container h2 {
+    font-size: 30px;
+  }
+  footer .footer_container .footer-link p {
+    font-size: 13px;
+    width: 50%;
+  }
+  footer .footer_container .social-media {
+    gap: 25px;
+  }
+  footer .footer_container .policy {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 50px;
+    text-align: center;
+  }
+  footer .footer_container .policy ul {
+    order: 2;
+    text-align: center;
+  }
+  footer .footer_container .policy ul a {
+    font-size: 14px;
+  }
+  footer .footer_container .policy .privacy {
+    order: 1;
+  }
+}/*# sourceMappingURL=adap.css.map */

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/scss.css">
+    <link rel="stylesheet" href="styles/adap.css">
+    <title>XEST FOLIO</title>
+
+    <style>
+        .accordion-container {
+            width: 570px;
+            margin: 24px auto;
+        }
+
+        .accordion-item {
+            padding: 10px 0;
+            background: #222;
+            color: white;
+            margin-bottom: 24px;
+            overflow: hidden;
+            border-radius: 5px;
+
+            font-family: Plus Jakarta Sans;
+        }
+
+        .accordion-header {
+            padding: 15px;
+            cursor: pointer;
+            user-select: none;
+            font-size: 18px;
+        }
+
+        .accordion-content {
+            padding: 15px;
+            display: none;
+        }
+
+        .accordion-item.active .accordion-content {
+            display: block;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <header>
+        <div class="header_container">
+            <a href="#"><img class="header-logo" src="/images/logo.svg" alt=""></a>
+            <nav>
+                <ul>
+                    <li><a class="#" href="">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><button class="button primary header-btn" type="button" data-modal-open>Contact Me</button></li>
+                </ul>
+            </nav>
+    
+            <div class="burger">
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero_container">
+
+                <div class="left-part">
+                
+                    <h1 class="miami-head">Miami</h1>
+                    <h1 class="miami-head-design">Miami</h1>
+                    <h1 class="walker-head">Walke<span>r</span></h1>
+                    <p>Award Wining product designer based in Georgia. We
+                        create user-friendly interfaces for fast-growing startups.</p>
+
+                    <a class="hero-link" href="">Book A Call</a>    
+
+                </div>
+                <div class="right-part">
+                    <img src="images/hero-bg.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="logos-section">
+            <div class="logos_container">
+                <h2>Trusted By</h2>
+                <ul>
+                    <li class="logos-none"><img src="images/logos-1.png" alt=""></li>
+                    <li><img src="images/logos-2.png" alt=""></li>
+                    <li><img src="images/logos-3.png" alt=""></li>
+                    <li><img src="images/logos-4.png" alt=""></li>
+                    <li class="logos-none"><img src="images/logos-5.png" alt=""></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="features_container">
+
+                <div class="features-about">
+                    <h3>FEATURES</h3>
+                    <h2>Giving Your Business<br>
+                        Some Great Ideas</h2>
+                    <p>Every designer needs the right tools to do the perfect job. Thankfully, we can do that. I design products that are more than pretty. I make them shippable and usable.</p>    
+                    
+                    <a class="features-link" href="">Contact US</a>
+                </div>
+
+                <div class="features-blocks">
+                    <ul class="features-block1">
+                        <li>
+                            <img src="images/features-img1.png" alt="">
+                            <h4>UX Experience </h4>
+                            <p>I design products that are more<br> than pretty. I make them  usable.</p>
+                        </li>
+                        <li>
+                            <img src="images/features-img3.png" alt="">
+                            <h4>Product Analysis</h4>
+                            <p>I design products that are more<br> than pretty. I make them  usable.</p>
+                        </li>
+                    </ul>
+
+                    <ul class="features-block2">
+                        <li>
+                            <img src="images/features-img2.png" alt="">
+                            <h4>UI Design</h4>
+                            <p>I design products that are more<br> than pretty. I make them  usable.</p>
+                        </li>
+                        <li>
+                            <img src="images/features-img4.png" alt="">
+                            <h4>Product Design</h4>
+                            <p>I design products that are more<br> than pretty. I make them  usable.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="achievements-section">
+            <div class="achievements_container">
+                <ul>
+                    <li>
+                        <h2 data-text="Это пример текста для h2">12K+</h2>
+                        <p>Project Complete</p>
+                    </li>
+
+                    <li>
+                        <h2>7K+</h2>
+                        <p>Happy Client</p>
+                    </li>
+
+                    <li>
+                        <h2>10+</h2>
+                        <p>Years Experience</p>
+                    </li>
+
+                    <li>
+                        <h2>270+</h2>
+                        <p>Win Awards</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <div class="portfolio_container">
+                <div class="portfolio-headline">
+                    <ul>
+                        <li><h3>Portfolio</h3></li>
+                        <li><h2>Some Of Our Best Works </h2></li>
+                    </ul>
+
+                    <a class="portfolio-link" href="">Load More</a>
+                </div>
+
+                <div class="portfolio-photos">
+                    <ul>
+                        <li>
+                            <img src="images/portfolio-img1.png" alt="">
+                            <div class="photos-headline">
+                                <h2>UI Design</h2>
+                                <p>Greenfy Website</p>
+                            </div>
+                        </li>
+                        <li><img src="images/portfolio-img2.png" alt=""></li>
+                        <li><img src="images/portfolio-img3.png" alt=""></li>
+                    </ul>
+
+                    <ul class="photos-block2">
+                        <li><img src="images/portfolio-img3.png" alt=""></li>
+                        <li><img src="images/portfolio-img2.png" alt=""></li>
+                        <li><img src="images/portfolio-img1.png" alt=""></li>
+                    </ul>
+
+                    <ul class="photos-block3">
+                        <li><img src="images/portfolio-img1.png" alt=""></li>
+                        <li><img src="images/portfolio-img2.png" alt=""></li>
+                        <li><img src="images/portfolio-img3.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-section">
+            <div class="blog_container">
+
+                <div class="blog-headline">
+                    <ul>
+                        <li><h3>LATEST BLOG</h3></li>
+                        <li><h2>Check Some of Latest<br>
+                            News & Articles</h2></li>
+                    </ul>
+    
+                    <a class="blog-link" href="">Load More</a>
+                </div>
+
+                <div class="blog">
+
+                    <div class="blog-body">
+
+                        <div class="blog-block">
+                            <div class="blog-block-about">
+                                <h6>
+                                    UI Design  |   22 May  2023
+                                </h6>
+                                <h2>What is UI Design in Front 
+                                    End Design?</h2>
+                                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
+    
+                                <a href="">READ MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-block2">
+                            <div class="blog-block-about">
+                                <h6>
+                                    UI Design  |   22 May  2023
+                                </h6>
+                                <h2>What is UI Design in Front 
+                                    End Design?</h2>
+                                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
+    
+                                <a href="">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-body2">
+
+                        <div class="blog-block">
+                            <div class="blog-block-about">
+                                <h6>
+                                    UI Design  |   22 May  2023
+                                </h6>
+                                <h2>What is UI Design in Front 
+                                    End Design?</h2>
+                                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
+    
+                                <a href="">READ MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-block2">
+                            <div class="blog-block-about">
+                                <h6>
+                                    UI Design  |   22 May  2023
+                                </h6>
+                                <h2>What is UI Design in Front 
+                                    End Design?</h2>
+                                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
+    
+                                <a href="">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-body3">
+
+                        <div class="blog-block">
+                            <div class="blog-block-about">
+                                <h6>
+                                    UI Design  |   22 May  2023
+                                </h6>
+                                <h2>What is UI Design in Front 
+                                    End Design?</h2>
+                                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
+    
+                                <a href="">READ MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-block2">
+                            <div class="blog-block-about">
+                                <h6>
+                                    UI Design  |   22 May  2023
+                                </h6>
+                                <h2>What is UI Design in Front 
+                                    End Design?</h2>
+                                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
+    
+                                <a href="">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="slider-section">
+            <div class="slider_container">
+                <div class="slider middle">
+                    <div class="slides">
+                        <input type="radio" name="r" id="r1" checked>
+                        <input type="radio" name="r" id="r2">
+                        <input type="radio" name="r" id="r3">
+                        <input type="radio" name="r" id="r4">
+                        
+                        <div class="slide s1">
+                            <img src="images/features-img1.png" alt="Изображение" class="img">
+                        </div>
+                        <div class="slide">
+                            <img src="images/features-img2.png" alt="Изображение" class="img">
+                        </div>
+                        <div class="slide">
+                            <img src="images/features-img3.png" alt="Изображение" class="img">
+                        </div>
+                        <div class="slide">
+                            <img src="images/features-img4.png" alt="Изображение" class="img">
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <label for="r1" class="bar"></label>
+                        <label for="r2" class="bar"></label>
+                        <label for="r3" class="bar"></label>
+                        <label for="r4" class="bar"></label>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="acordion-section">
+            <div class="acordion_container">
+
+                <div class="acordion-left">
+                    <div class="accordion-item">
+                        <div class="accordion-header">How can we help your business?</div>
+                        <div class="accordion-content">
+                            <h2>Lorem Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+            
+                    <div class="accordion-item">
+                        <div class="accordion-header">What are the advantages of Bisnext</div>
+                        <div class="accordion-content">
+                            <h2>Lorem Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+            
+                    <div class="accordion-item">
+                        <div class="accordion-header">Let’s find an office near you?</div>
+                        <div class="accordion-content">
+                            <h2>Lorem Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+            
+                    <div class="accordion-item">
+                        <div class="accordion-header">How IT consultancy experts work?</div>
+                        <div class="accordion-content">
+                            <h2>Lorem Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acordion-right">
+                    <h3>FAQs</h3>
+                    <h2>Be Kind to Your Mind<br>
+                        Question & Answer</h2>
+                    <p>All Your Qustions are in A document, in question and answer format, that introduces newcomers to a topic or answers common questions.</p>
+                </div>
+
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const accordionItems = document.querySelectorAll('.accordion-item');
+        
+                    accordionItems.forEach(item => {
+                        item.addEventListener('click', function () {
+                            this.classList.toggle('active');
+                        });
+                    });
+                });
+            </script>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer_container">
+            <h3>
+                Have you project in mind?
+            </h3>
+            <h2>
+                Let’s Make Something<br>
+                Great Together! 
+            </h2>
+
+            <a class="footer-link" href=""><p>CONTACT WITH<br> US</p></a>
+
+            <img class="footer-logo" src="images/logo.svg" alt="">
+
+            <ul class="social-media">
+                <li><a href=""><img src="images/facebook.png" alt=""></a></li>
+                <li><a href=""><img src="images/link.png" alt=""></a></li>
+                <li><a href=""><img src="images/inst.png" alt=""></a></li>
+                <li><a href=""><img src="images/be.png" alt=""></a></li>
+                <li><a href=""><img src="images/ball.png" alt=""></a></li>
+            </ul>
+
+            <ul class="policy">
+                <ul>
+                    <li>© 2023 Ideapeel Inc. All Rights Reserved</li>
+                </ul>
+
+                <ul class="privacy">
+                    <li><a href="">Privacy Policy</a></li>
+                    <li class="space"><p>|</p></li>
+                    <li><a href="">Terms and Conditions</a></li>
+                </ul>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-btn" type="button" aria-label="Close modal window button" data-modal-close>
+                <svg class="modal-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-sign"></use>
+                </svg>
+            </button>
+        
+        <p class="modal-caption">Leave your contacts and we will call you back</p>
+
+        <form class="modal-form" name="register_form">
+
+            <div class="modal-form-one">
+                <label class="modal-form-label" for="user-name">Name</label>
+                <div class="modal-form-field">
+                    <input class="modal-form-input" type="text" name="user-name" id="user-name" required />
+                    <svg class="modal-form-icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-user"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="modal-form-one">
+                <label class="modal-form-label" for="register_form_phone">Phone</label>
+                <div class="modal-form-field">
+                    <input class="modal-form-input" type="tel" name="register_form_phone" id="register_form_phone" maxlength="13" required />
+                    <svg class="modal-form-icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="modal-form-one">
+                <label class="modal-form-label" for="register_form_email">Email</label>
+                <div class="modal-form-field">
+                     <input class="modal-form-input" type="email" name="register_form_email" id="register_form_email" minlength="6" required />
+                     <svg class="modal-form-icon" width="18" height="24">
+                    <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="modal-form-two">
+                <label class="modal-form-label" for="user-comment">Comment</label>
+                <textarea class="modal-form-comment" name="user-comment" id="user-comment" rows="6" placeholder="Text input"></textarea>
+            </div>
+            
+            <div class="modal-form-three">
+                <input class="modal-form-agreement-checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true" />
+                <label class="modal-form-agreement" for="user-privacy"><span class="agreement-icon">
+                    <svg class="modal-form-custom-checkbox" width="10" height="8">
+                        <use class="checked" href="./images/icons.svg#icon-Vector"></use>
+                    </svg>
+                </span> <span class="acception-small">I accept the terms and conditions of the <a class="modal-form-agreement-link" href="#">Privacy Policy</a>  </span>
+                </label>    
+            </div>
+
+            <button class="modal-form-btn" type="submit">Send</button>
+
+        </form>
+        </div>
+    </div>
+
+    <!--BURGER MENU-->
+<!-- <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+        <svg class="modal-icon" width="8" height="8">
+            <use href="images/sprite.svg"></use>
+        </svg>
+    </button>
+
+    <ul class="list nav-list">
+        <li><a href="/" class="first-page link current link-active">About</a></li>
+        <li><a href="/" class="first-page link current">Service</a></li>
+        <li><a href="/" class="first-page link current">Blogs</a></li>
+        <li><a href="/" class="first-page link current">FAQ</a></li>
+    </ul>
+
+</div> -->
+
+<script>
+    document.querySelector('.burger').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.querySelector('nav').classList.toggle('open');
+    })
+</script>
+
+<script src="modal.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous">
+</script>
+    <script src="javaScript/main.js"></script>
+    <script defer src="javaScript/mobile-menu.js"></script>
+</body>
+</html>
